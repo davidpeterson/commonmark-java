@@ -17,7 +17,7 @@ public class Parsing {
     public static final String OPENTAG = "<" + TAGNAME + ATTRIBUTE + "*" + "\\s*/?>";
     public static final String CLOSETAG = "</" + TAGNAME + "\\s*[>]";
 
-    public static int CODE_BLOCK_INDENT = 4;
+    public static final int CODE_BLOCK_INDENT = 4;
 
     public static int columnsToNextTabStop(int column) {
         // Tab stop is 4

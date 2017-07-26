@@ -93,7 +93,7 @@ public class Parser {
         return document;
     }
 
-    private class CustomInlineParserContext implements InlineParserContext {
+    private static class CustomInlineParserContext implements InlineParserContext {
 
         private List<DelimiterProcessor> delimiterProcessors;
 
