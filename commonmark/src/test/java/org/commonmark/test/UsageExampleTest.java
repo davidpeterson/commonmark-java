@@ -62,7 +62,7 @@ public class UsageExampleTest {
         assertEquals("<p>Example:</p>\n<pre>code\n</pre>\n", renderer.render(document));
     }
 
-    class WordCountVisitor extends AbstractVisitor {
+    static class WordCountVisitor extends AbstractVisitor {
 
         int wordCount = 0;
 
@@ -78,7 +78,7 @@ public class UsageExampleTest {
         }
     }
 
-    class ImageAttributeProvider implements AttributeProvider {
+    static class ImageAttributeProvider implements AttributeProvider {
         @Override
         public void setAttributes(Node node, String tagName, Map<String, String> attributes) {
             if (node instanceof Image) {
@@ -87,7 +87,7 @@ public class UsageExampleTest {
         }
     }
 
-    class IndentedCodeBlockNodeRenderer implements NodeRenderer {
+    static class IndentedCodeBlockNodeRenderer implements NodeRenderer {
 
         private final HtmlWriter html;
 

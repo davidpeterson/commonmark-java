@@ -30,7 +30,7 @@ public class ParserTest {
 
         InputStream input1 = SpecReader.getSpecInputStream();
         Node document1;
-        try (InputStreamReader reader = new InputStreamReader(input1)) {
+        try (InputStreamReader reader = new InputStreamReader(input1, "UTF-8")) {
             document1 = parser.parseReader(reader);
         }
 
